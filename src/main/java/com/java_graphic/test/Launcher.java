@@ -1,20 +1,27 @@
 package com.java_graphic.test;
 
+import com.java_graphic.core.EngineManager;
 import com.java_graphic.core.WindowManager;
+import com.java_graphic.core.utils.Constants;
 import org.lwjgl.Version;
 
 public class Launcher {
-    private  static final String title = "First window";
+   private static WindowManager window;
+   private static EngineManager engineManager;
+
     public static void main(String[] args) {
-        System.out.println(Version.getVersion());
-        WindowManager window = new WindowManager(title,1600,900,false);
-        window.init();
 
-        while (!window.windowShouldClose()){
-            window.update();
+        window = new WindowManager(Constants.TITLE,1600,900,false);
+        engineManager = new EngineManager();
+
+        try {
+            engineManager.start();
+        } catch (Exception e){
+            e.printStackTrace();
         }
+    }
 
-
-        window.cleanUp();
+    public static WindowManager getWindow() {
+        return window;
     }
 }
