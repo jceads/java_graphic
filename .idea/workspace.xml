@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9c699ab-89fa-4c1f-bd9b-4665eca4b65a" name="Changes" comment="init comit and first window">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/EngineManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/ILogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/ObjectLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/RenderManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/entity/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/test/TestGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/EngineManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/EngineManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/core/utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/java_graphic/test/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_graphic/test/Launcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>

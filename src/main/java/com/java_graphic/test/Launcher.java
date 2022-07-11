@@ -7,21 +7,28 @@ import org.lwjgl.Version;
 
 public class Launcher {
    private static WindowManager window;
-   private static EngineManager engineManager;
+   private static TestGame game;
 
     public static void main(String[] args) {
+        System.out.println("program starting...");
+        window = new WindowManager(Constants.TITLE,Constants.WIDTH,Constants.HEIGHT,false);
+        game = new TestGame();
 
-        window = new WindowManager(Constants.TITLE,1600,900,false);
-        engineManager = new EngineManager();
-
+        EngineManager engineManager = new EngineManager();
         try {
             engineManager.start();
+            System.out.println("program started");
         } catch (Exception e){
             e.printStackTrace();
         }
+        System.out.println("program closing...");
     }
 
     public static WindowManager getWindow() {
         return window;
+    }
+
+    public static TestGame getGame() {
+        return game;
     }
 }
